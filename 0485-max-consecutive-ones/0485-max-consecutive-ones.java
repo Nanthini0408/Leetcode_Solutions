@@ -3,12 +3,11 @@ class Solution {
         int n=nums.length;
         int count=0,max=0;
         for(int i=0;i<n;i++){
-            if(nums[i]==1){
+            if(nums[i]==1)
                 count++;
-            }
+            else
+                count=0;
             max=Math.max(max,count);
-            if(nums[i]!=1)
-               count=0;
         }
         return max;
     }
